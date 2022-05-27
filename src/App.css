@@ -2,37 +2,195 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Calendar {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: +1;
+  height: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoutbutton {
+  padding: 2%;
+  height: 40%;
+  border: none;
+  border-radius: none;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+.Day {
+  width: 100%;
+}
+
+.name {
+  padding: 5%;
+  font-weight: bold;
+  background-color: white;
+  position: sticky;
+  top: 80px;
+  border-bottom: 0.1px solid lightgray;
+  width: 100%;
+}
+
+.date {
+  padding: 5%;
+  font-weight: bold;
+  background-color: white;
+  position: sticky;
+  top: 104px;
+  border-bottom: 0.1px solid lightgray;
+  width: 100%;
+}
+
+.today {
+  padding: 5%;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  position: sticky;
+  top: 104px;
+  border-bottom: 0.1px solid blue;
+  width: 100%;
+}
+
+.hours {
+  padding: 5%;
+  color: lightgray;
+  background-color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  font-size: xx-small;
+}
+
+.task {
+  padding: 5%;
+  background-color: lightblue;
+  color: white;
+  z-index: +1;
+  cursor: pointer;
+  font-size: xx-small;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.previousWeek {
+  max-height: 100px;
+  position: sticky;
+  top: 80px;
+  border-radius: 0%;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.nextWeek {
+  margin-left: 4px;
+  max-height: 100px;
+  position: sticky;
+  top: 80px;
+  border-radius: 0%;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.taskform {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+}
+
+input {
+  padding: 1%;
+  margin-bottom: 2%;
+  border-radius: 0;
+  border: solid 0.5px grey;
+}
+
+select {
+  margin-bottom: 2%;
+}
+
+button {
+  padding: 1%;
+  background-color: blue;
   color: white;
+  border-radius: 0;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.deletebutton {
+  background-color: red;
+  margin-bottom: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1300px) {
+  .date {
+    top: 114px;
   }
-  to {
-    transform: rotate(360deg);
+  .today {
+    top: 114px;
+  }
+  .hours, .task {
+    font-size: small;
+  }
+}
+
+@media (min-width: 550px) {
+  .nextWeek {
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 720px) {
+  .nextWeek {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 950px) {
+  .nextWeek {
+    margin-left: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nextWeek {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nextWeek {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .nextWeek {
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .nextWeek {
+    margin-left: 28px;
   }
 }

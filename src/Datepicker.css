@@ -1,0 +1,89 @@
+.Pickercontainer {
+    display: flex;
+    z-index: +1;
+}
+
+.Nocontainer {
+    display: none;
+}
+
+.inputcontainer {
+    display: flex;
+    width: 100%;
+}
+
+.dateinput {
+    padding: 1%;
+    border-radius: 0;
+    border: solid 0.5px grey;
+    width: 50%;
+}
+
+.timeinput {
+    padding: 1%;
+    border-radius: 0;
+    border: solid 0.5px grey;
+    background-color: white;
+    width: 50%;
+}
+
+.pickerbutton {
+    border: none;
+    border-radius: 0;
+    background-color: blue;
+    color: white;
+}
+  
+.pickertitle {
+    border-top: solid 0.5px lightgray;
+}
+  
+.Pickerdaysdiv {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 0.5px lightgray;
+}
+  
+.pickerdays {
+    margin-top: 1.2%;
+    width: 50px;
+    height: 30px;
+    font-weight: bold;
+}
+  
+.pickerbutton {
+    cursor: pointer;
+}
+  
+.Datepicker {
+    display: flex;
+    width: 350px;
+    height: 300px;
+    border: solid 0.5px lightgray;
+    flex-wrap: wrap;
+}
+  
+.datepicks {
+    margin-top: 1.2%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+  
+.datepicksactive {
+    margin-top: 1.2%;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+  
+.datepickstoday {
+    margin-top: 1.2%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
